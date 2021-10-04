@@ -9,7 +9,7 @@ const GITHUB_LINK = `https://github.com/smolnate`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 //change this every time we redeploy the smart contract onto the blockchain
-const CONTRACT_ADDRESS = "0xaF7f964Fdc0D96707dEeD6EBe9e2f1122F325F96";
+const CONTRACT_ADDRESS = "0x196671af68aFc20D467195FaD73A5124B5c4244E";
 
 const App = () => {
 
@@ -92,7 +92,7 @@ const App = () => {
       // very similar to webhooks
       connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {
         console.log(from, tokenId.toNumber())
-        alert(`Hey! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
+        alert(`Hey! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: \nhttps://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
       });
 
       console.log("Setup event listener!")
