@@ -6,6 +6,8 @@ This is a project I made to mint my own NFT collection and to show it off, I mad
 
 These NFTs can be viewed on OpenSea (but on the Rinkeby Testnet because I am broke... and also don't want to waste money if things break!!!)
 
+The directory `epic-nfts` corresponds to the solidity smart contract, while the directory `nft-project` corresponds to the front-end React/Web3 webapp.
+
 ## Important
 
 In order to properly use the web app, you need to install MetaMask otherwise it will throw an error.
